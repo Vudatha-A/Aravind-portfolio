@@ -97,6 +97,27 @@
     .contact a:hover {
       text-decoration: underline;
     }
+ .project-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.project-flex .text {
+  flex: 1 1 55%;
+}
+.project-flex .image {
+  flex: 1 1 40%;
+  text-align: right;
+}
+.project-flex .image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
   </style>
 </head>
 <body>
@@ -132,24 +153,36 @@
   </section>
   <section>
     <h2>Featured Projects</h2>
-    <div class="project">
-      <h3>Customer Segmentation Analysis</h3>
-      <p><strong>Skills:</strong> SQL, Power BI, Python</p>
-      <p>Conducted in-depth analysis of purchasing behavior using clustering algorithms. Identified five customer segments that enabled personalized marketing strategies and improved conversion rates by 12%.</p>
-      <img src="customer segmentation Analysis.png" alt="Customer Segmentation Dashboard">
-    </div>
-    <div class="project">
-      <h3>Agile Productivity Dashboard</h3>
+    <div class="project project-flex">
+  <div class="text">
+    <h3>Customer Segmentation Analysis</h3>
+    <p><strong>Skills:</strong> SQL, Power BI, Python</p>
+    <p>Conducted in-depth analysis of purchasing behavior using clustering algorithms. Identified five customer segments that enabled personalized marketing strategies and improved conversion rates by 12%.</p>
+  </div>
+  <div class="image">
+    <img src="customer segmentation Analysis.png" alt="Customer Segmentation Dashboard">
+  </div>
+</div>
+<div class="project project-flex">
+  <div class="text">
+    <h3>Agile Productivity Dashboard</h3>
       <p><strong>Skills:</strong> Tableau, Jira, Excel</p>
       <p>Built an agile productivity dashboard integrating Jira APIs and time-series analytics to monitor team sprint performance. Reduced project delays by 25% through real-time bottleneck tracking.</p>
-      <img src="agile productivity dashboard.png" alt="Productivity Dashboard">
-    </div>
-    <div class="project">
-      <h3>Compliance Risk Heatmap</h3>
+  </div>
+  <div class="image">
+    <img src="agile productivity dashboard.png" alt="Productivity Dashboard">
+  </div>
+</div>
+<div class="project project-flex">
+  <div class="text">
+    <h3>Compliance Risk Heatmap</h3>
       <p><strong>Skills:</strong> Power BI, Excel, Risk Scoring Models</p>
       <p>Developed a real-time risk scoring dashboard for regulatory compliance teams, improving audit preparedness and issue mitigation timelines by 18%.</p>
-      <img src="risk heatmap.png" alt="Compliance Heatmap Dashboard">
-    </div>
+  </div>
+  <div class="image">
+    <img src="risk heatmap.png" alt="Compliance Heatmap Dashboard">
+  </div>
+</div>
   </section>
   <section>
     <h2>Contact</h2>
